@@ -1,0 +1,277 @@
+header, section, footer{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    height: 120px;
+    background-color: darkgreen;
+}
+
+section{
+    height: 2555px;
+    background-color: darkgrey;
+}
+
+footer{
+    height: 45px;
+    background-color: gold;
+}
+
+#marca{
+    width: 960px;
+    height: 80px;
+    background-color: rgb(31, 209, 31);
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+#botonera_de_secciones{
+    width: 960px;
+    height:40px;
+    background-color: #53dd6a;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carrito_de_compras{
+    width: 70px;
+    height:70px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+    background-color: rgb(13, 215, 241);
+}
+#nosotros_historia{
+    width: 960px;
+    height: 50px;
+    clear: both;
+    background-color: rgb(220, 230, 44);
+}
+#fila1_izq{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: rgb(191, 44, 44);
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+#fila1_centro{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+#fila1_der{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: rgb(228, 144, 144);
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+#linea_de_tiempo{
+    width: 960px;
+    height: 80px;
+    background-color: rgb(44, 125, 191);
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    margin-bottom: 10px;
+}    
+
+#estilos{
+    width: 960px;
+    height: 50px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(220, 230, 44);
+}
+#tabla_de_productos{
+    width: 960px;
+    height: 1200px;
+    clear: both
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color:  rgb(120, 030, 44);
+}
+
+#producto{
+    width: 960px;
+    height: 50px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(220, 230, 44);
+}
+#fila1_barril{
+    width: 300px;
+    height: 50px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+#fila1_botellas{
+    width: 300px;
+    height: 50px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:10px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+#fila1_choperas{
+    width: 300px;
+    height: 50px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:10px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+#fila2_barril_foto{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: rgb(191, 44, 44);
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+#fila2_botellas_video{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color: rgb(187, 124, 124);
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+#fila2_choperas_foto{
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-color:rgb(191, 44, 44);
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+#fila3_barril{
+    width: 300px;
+    height: 100px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+#fila3_botellas{
+    width: 300px;
+    height: 100px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+#fila3_choperas{
+    width: 300px;
+    height: 100px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+#fila4_barril{
+    width: 300px;
+    height: 50px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+#fila4_botellas{
+    width: 300px;
+    height: 50px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-bottom: 10px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+#fila4_choperas{
+    width: 300px;
+    height: 50px;
+    float: left;
+    background-color: rgb(44, 125, 191);
+    margin-bottom: 10px;
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+
+#contactos{
+    width: 960px;
+    height: 50px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(220, 230, 44);
+}
+#botonera_de_contactos{
+    width: 960px;
+    height: 150px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightcoral;
+}
+
+#botonera_de_frases{
+    width: 960px;
+    height: 50px;
+    clear: both;
+    background-color: lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+}
+#advertencia{
+    height: 30px;
+    width: 960px;
+    background-color: rgb(252, 255, 47);
+    margin-left: auto;
+    margin-right: auto;
+}
+#derechos{
+    width: 500px;
+    height: 15px;
+    background-color: rgb(241, 247, 138);
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
