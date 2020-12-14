@@ -4,11 +4,11 @@
 This is my first proyect as a WebDesigner. <br/>
 I will create the web page to htts://brugge.com.ar <br/>
 Everyone can also follow them at @bruggecerveza, they are really nice people, very hard work,and create a delicious artesanal beer <br/>
-It`s a Product Web Page with responsive design, with four sections: Us and our history, Our styles, Our Products and Contact us. <br/>
+It is a Product Web Page with responsive design, with four sections: Us and our history, Our styles, Our Products and Contact us. <br/>
 In the products I added a video and differents call to action, so people can order by whatsapp. <br/>
 In the contact us section Y make linkes to: Instagram, Whatsapp, Email, and another web page (where you can see where you can buy the beers). <br/<
 And at the end I added a button to get a discount cupon, so a form will be deiplay. <br/>
-It`s a proyect still in progress, so anyone can make suggestions, that will be great!.
+It ia a proyect still in progress, so anyone can make suggestions, that will be great!.
 
 ## Content 🚀
 _This Project only has one master branch, it was a small project so it did not need more branches._
