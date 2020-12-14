@@ -1,0 +1,202 @@
+header, section, footer{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    height: 230px;
+    background-color:#F4AC52;
+}
+
+body{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+section{
+    height: 600px;
+}
+
+h2, h3, p{
+    color: #3D1C04;
+}
+/* HEADER*/
+
+#marca{
+    width: 960px;
+    height: 230px;
+    background-color: #F4AC52;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+#marca img{
+    height: 100%;
+    margin-left: 5%;
+}
+
+/*SECTION*/
+#titulo{
+    background-color: #3D1C04;
+    color: #F4AC52;
+    width: 960px;
+    height: 100px;
+    margin: 0 auto 0 auto; 
+    font-weight: 800;
+    line-height: 100px; 
+    letter-spacing: 4px;
+}
+
+
+h2{
+    background: -moz-linear-gradient(top, #fcdeba, #f0bf83 30%, #F4AC52 70%);
+    background: -webkit-linear-gradient(top, #fcdeba, #f0bf83 30%, #F4AC52 70%);
+    width: 350px;
+    margin: 50px auto 50px auto;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 7px;
+}
+h3{
+    text-shadow: -5px 5px 3px #F4AC52;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+ul li p a{
+    text-decoration: none;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 80px;
+}
+
+
+#derechos{
+    width: 960px;
+    height: 80px;
+    background-color: #3D1C04;
+    float: left;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#derechos p{
+    color: #F4AC52;
+}
+
+@media screen and (min-width:600px) and (max-width:1280px){
+    header, section, footer{
+        width: 90%;
+    }
+    
+    section{
+        height: 610px;
+    }
+    
+    /* HEADER*/
+    
+    #marca{
+        width: 100%;
+    }
+    #marca img{
+        height: 100%;
+        margin-left: 0%;
+    }
+    
+    /*SECTION*/
+    #titulo{
+        width: 100%;
+    }
+    
+    
+    h2{
+        width: 60%;
+    }
+       
+       
+    /*FOOTER*/
+    
+    footer{
+        height: 80px;
+    }
+     
+    #derechos{
+        width: 100%;
+  
+    }
+   
+}
+
+@media screen and (min-width:320px) and (max-width:599px){
+    header, section, footer{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header{
+        height: 100px;
+        
+    }
+    
+    section{
+        height: 620px;
+    }
+    
+    
+    /* HEADER*/
+    
+    #marca{
+        width: 90%;
+        height: 100px;
+        background-color: #F4AC52;
+        clear: both;
+    }
+    #marca img{
+        height: 80%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    /*SECTION*/
+    #titulo{
+        width: 100%;
+        height: 100px;
+        margin: 5px auto 5px auto; 
+    }
+    
+    h2{
+        width: 80%;
+    }
+    
+    
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+    ul li p a{
+        text-decoration: none;
+    }
+    
+    /*FOOTER*/
+    
+    footer{
+        height: 140px;
+    }
+        
+    #derechos{
+        width: 100%;
+        height: 140px;
+    }
+    #derechos p{
+        margin: 10px 15px 10px 15px;
+    }
+}
