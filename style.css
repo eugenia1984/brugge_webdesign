@@ -5,35 +5,75 @@ header, section, footer{
 }
 
 header{
-    height: 120px;
-    background-color: darkgreen;
+    height: 295px;
+    background-color:#F4AC52;
 }
 
 section{
-    height: 2555px;
-    background-color: darkgrey;
+    height: 2860px;
 }
 
-footer{
-    height: 45px;
-    background-color: gold;
+p{
+    color: #3D1C04;
 }
+/* HEADER*/
 
 #marca{
     width: 960px;
-    height: 80px;
-    background-color: rgb(31, 209, 31);
+    height: 230px;
+    background-color: #F4AC52;
     clear: both;
     margin-left: auto;
     margin-right: auto;
 }
-#botonera_de_secciones{
+#marca img{
+    height: 100%;
+    margin-left: 23%;
+}
+
+h2{
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #F4AC52;
+}
+
+#botonera_principal{
     width: 960px;
-    height:40px;
-    background-color: #53dd6a;
+    height:65px;
     clear: both;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
+    background-color: #3D1C04;
+}
+
+#botonera_principal ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#botonera_principal ul li{
+    display:inline;
+}
+
+#botonera_principal ul li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 237px;
+    height: 65px;
+    margin-bottom: 15px;
+    background-color: #3D1C04;
+    color:  #F4AC52;
+    clear: both;
+    border: solid 3px #3D1C04;
+    box-sizing: border-box;
+}
+
+#botonera_principal ul li a:hover{
+    background-color:#3d3733;
+    color: #3D1C04;
 }
 
 #carrito_de_compras{
@@ -43,53 +83,75 @@ footer{
     top: 15px;
     right: 15px;
     z-index: 100;
-    background-color: rgb(13, 215, 241);
 }
+#carrito_de_compras img{
+    height: 100%;
+}
+
+/*NOSOTROS Y NUESTRA HISTORIA*/
+
 #nosotros_historia{
     width: 960px;
     height: 50px;
     clear: both;
-    background-color: rgb(220, 230, 44);
+    background-color: #3D1C04;
+    padding-top: 2px;
+    box-sizing: border-box;
 }
 #fila1_izq{
     width: 300px;
-    height: 300px;
+    height: 200px;
     float: left;
-    background-color: rgb(191, 44, 44);
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 15px;
     margin-right: 7.5px;
 }
+
+#fila1_izq img{ 
+   width: 100%;
+   margin-top: 5px;
+}
+
 #fila1_centro{
     width: 300px;
-    height: 300px;
+    height: 200px;
     float: left;
-    background-color: rgb(44, 125, 191);
-    margin-top:10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 7.5px;
     margin-right: 7.5px;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: center;
 }
 #fila1_der{
     width: 300px;
-    height: 300px;
+    height: 200px;
     float: left;
-    background-color: rgb(228, 144, 144);
-    margin-top:10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 7.5px;
     margin-right: 15px;
 }
+#fila1_der img{
+    margin-top: 5px;
+    width: 100%;
+}
 #linea_de_tiempo{
     width: 960px;
-    height: 80px;
-    background-color: rgb(44, 125, 191);
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
     clear: both;
     margin-bottom: 10px;
 }    
+
+#linea_de_tiempo img{
+    height: 100%;
+}
+
+/* NUESTROS ESTILOS*/
 
 #estilos{
     width: 960px;
@@ -97,17 +159,133 @@ footer{
     clear: both;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(220, 230, 44);
+    background-color: #3D1C04;
+    padding-top: 3px;
 }
 #tabla_de_productos{
     width: 960px;
-    height: 1200px;
-    clear: both
+    height: 1220px;
+    clear: both;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    background-color:  rgb(120, 030, 44);
+    margin-top: 25px;
+    box-sizing: border-box;
 }
+
+.marco{
+    width: 960px;
+    height: 300px;
+    clear: both;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.submarco{
+    width: 450px;
+    height: 290px;
+    float:left;
+    margin: 5px;
+    border: solid 2px #4f48441e;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    box-sizing: border-box;
+}
+
+h4{
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+
+#foto_session_ipa{
+    height: 285px;
+    width: 285px;
+    float: left;
+    background-image: url(SessionIPA.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_honey{
+    width: 285px;
+    height: 285px;
+    float: left;
+    background-image: url(honey.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_irish_red{
+    width: 280px;
+    height: 280px;
+    float: left;
+    background-image: url(irish_red.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_new_england_ipa{
+    width: 280px;
+    height: 280px;
+    float: left;
+    background-image: url(new_england_ipa.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_golden_wheat{
+    width: 280px;
+    height: 280px;
+    float: left;
+    background-image: url(golden_wheat.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_oatmeal{
+    width: 280px;
+    height: 280px;
+    float: left;
+    background-image: url(oatmeal_stout.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_summer_ipa{
+    width: 280px;
+    height: 280px;
+    float: left;
+    background-image: url(summer_ipa.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+#foto_old_ale{
+    width: 280px;
+    height: 280px;
+    float: left;
+    background-image: url(old_ale.jpg);
+    background-size: cover;
+    border-radius: 7px 100px 100px 7px;
+}
+
+.detalle_producto{
+    width: 160px;
+    height: 280px;
+    float: left;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+   
+}
+
+/* NUESTROS PRODUCTOS*/
 
 #producto{
     width: 960px;
@@ -115,125 +293,149 @@ footer{
     clear: both;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(220, 230, 44);
+    background-color: #3D1C04;
+    padding-top: 2px;
+    box-sizing: border-box;
+    
 }
-#fila1_barril{
-    width: 300px;
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.fila1{
+    width: 320px;
     height: 50px;
     float: left;
-    background-color: rgb(44, 125, 191);
+    background-color: #f4ac52;
+    color: #3D1C04;
     margin-top:10px;
     margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 7.5px;
+    box-sizing: border-box;
 }
-#fila1_botellas{
-    width: 300px;
-    height: 50px;
-    float: left;
-    background-color: rgb(44, 125, 191);
-    margin-top:10px;
-    margin-bottom: 5px;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
+.fila1 h3{
+    margin-top: 9px;
+    letter-spacing: 5px;
 }
-#fila1_choperas{
-    width: 300px;
-    height: 50px;
-    float: left;
-    background-color: rgb(44, 125, 191);
-    margin-top:10px;
-    margin-bottom: 5px;
-    margin-left: 7.5px;
-    margin-right: 15px;
-}
+
 #fila2_barril_foto{
     width: 300px;
     height: 300px;
     float: left;
-    background-color: rgb(191, 44, 44);
+    background-image: url(barriles.jpg);
+    background-size: cover;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 15px;
     margin-right: 7.5px;
+    border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    -webkit-border-radius: 40px 40px 40px 40px;
 }
 #fila2_botellas_video{
     width: 300px;
     height: 300px;
     float: left;
-    background-color: rgb(187, 124, 124);
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 7.5px;
     margin-right: 7.5px;
 }
+#fila2_botellas_video video{
+height: 100%;
+margin-left: 20%;
+margin-right: 20%;
+}
+
 #fila2_choperas_foto{
     width: 300px;
     height: 300px;
     float: left;
-    background-color:rgb(191, 44, 44);
+    background-image: url(chopera.png);
+    background-size: cover;
     margin-top:5px;
     margin-bottom: 5px;
     margin-left: 7.5px;
     margin-right: 15px;
+    border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    -webkit-border-radius: 40px 40px 40px 40px;
 }
 #fila3_barril{
-    width: 300px;
-    height: 100px;
+    width: 280px;
+    height: 150px;
     float: left;
-    background-color: rgb(44, 125, 191);
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 7.5px;
+    border: solid 2px #4f48441e;
+    -moz-border-radius: 45px;
+    -webkit-border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    margin: 5px 7.5px 5px 30px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 #fila3_botellas{
-    width: 300px;
-    height: 100px;
+    width: 280px;
+    height: 150px;
     float: left;
-    background-color: rgb(44, 125, 191);
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
+    border: solid 2px #4f48441e;
+    -moz-border-radius: 45px;
+    -webkit-border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    margin: 5px 7.5px 5px 25px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 #fila3_choperas{
     width: 300px;
-    height: 100px;
+    height: 150px;
     float: left;
-    background-color: rgb(44, 125, 191);
-    margin-top:5px;
-    margin-bottom: 5px;
-    margin-left: 7.5px;
-    margin-right: 15px;
+    border: solid 2px #4f48441e;
+    -moz-border-radius: 45px;
+    -webkit-border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
+    margin: 5px 15px 5px 15px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
 }
-#fila4_barril{
+
+.fila4{
     width: 300px;
     height: 50px;
     float: left;
-    background-color: rgb(44, 125, 191);
+    margin-top: 5px;
     margin-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 7.5px;
+    margin-left: 16px;
+    text-align: center;
+    border: 3px solid rgba(193, 187, 187, 0.5);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    box-sizing: border-box;
 }
-#fila4_botellas{
-    width: 300px;
-    height: 50px;
-    float: left;
-    background-color: rgb(44, 125, 191);
-    margin-bottom: 10px;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
+.fila4 p{
+    margin-top: 2px;
 }
-#fila4_choperas{
-    width: 300px;
-    height: 50px;
-    float: left;
-    background-color: rgb(44, 125, 191);
-    margin-bottom: 10px;
-    margin-left: 7.5px;
-    margin-right: 15px;
+.fila4 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+/*CONTACTOS*/
 
 #contactos{
     width: 960px;
@@ -241,37 +443,637 @@ footer{
     clear: both;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(220, 230, 44);
+    background-color:#3d1c04;
 }
-#botonera_de_contactos{
-    width: 960px;
-    height: 150px;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightcoral;
+#contactos h2{
+    padding-top: 10px;
 }
+
+
 
 #botonera_de_frases{
     width: 960px;
-    height: 50px;
+    height: 250px;
     clear: both;
-    background-color: lightcoral;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
-#advertencia{
-    height: 30px;
+
+#botonera_de_frases ul{
     width: 960px;
-    background-color: rgb(252, 255, 47);
-    margin-left: auto;
-    margin-right: auto;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-#derechos{
-    width: 500px;
-    height: 15px;
-    background-color: rgb(241, 247, 138);
-    float: left;
+
+#botonera_de_frases ul li{
+    display: inline;
+    width: 245px;
+}
+
+#botonera_de_frases ul li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 235px;
+    height: 210px;
+    color: #3D1C04;
+    clear: both;
+    box-sizing: border-box;
+}
+
+#botonera_de_frases ul li a img{
+    width: 40%;
+    margin-left: 32%;
+}
+
+#botonera_de_frases ul li :hover{
+    background-color: #ebd1b2;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    height: 130px;
+}
+#cupon{ 
+    height: 60px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+}
+button{
+    color: #3d1c04;
+    background-color: #F4AC52;
+    text-align: center;
+    list-style: none;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-left: 250px;
+    margin-top: 10px;
+    border: 5px 5px 5px 5px solid rgba(243, 243, 243, 0.529);
+    -moz-border: 5px 5px 5px 5pxsolid rgba(243, 243, 243, 0.529);
+    -webkit-border: 5px 5px 5px 5px solid rgba(243, 243, 243, 0.529);
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    
+}
+button a{
+    text-decoration: none;
+    color:  #3d1c04;
+}
+
+#derechos{
+    width: 960px;
+    height: 70px;
+    background-color: #3D1C04;
+    float: left;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#derechos p{
+    color: #F4AC52;
+}
+
+/*media 600 a 1023*/
+
+@media screen and (min-width:600px) and (max-width:1280px){
+    header, section, footer{
+        width: 580px;
+    }
+
+    header{
+        height: 530px;
+    }
+      
+    section{
+        height: 5250px;
+    }
+    
+    /* HEADER*/
+    
+    #marca{
+        width: 580px;
+    }
+    #marca img{
+        margin-left: 8%;
+    }
+  
+    #botonera_principal{
+        width: 580px;
+        height: 300px;
+    }
+    
+    #botonera_principal ul li{
+        display:inline;
+    }
+    
+    #botonera_principal ul li a{
+        width: 580px;
+    }
+      
+    #carrito_de_compras{
+        top: 25px;
+        right: 25px;
+        z-index: 100;
+    }
+   
+    
+    /*NOSOTROS Y NUESTRA HISTORIA*/
+    
+    #nosotros_historia{
+        width: 580px;
+        background-color: #8a4514; 
+    }
+    #fila1_izq{
+        width: 580px;
+        clear: both;
+        height: 380px;
+        margin: 5px;
+    }
+    
+    #fila1_izq img{ 
+       width: 98%;
+       margin-top: 5px;
+    }
+    
+    #fila1_centro{
+        width: 580px;
+        height: 220px;
+        clear: both;
+        font-size: 18px;       
+    }
+    #fila1_der{
+        width: 580px;
+        clear: both;
+        height: 440px;
+        margin: 10px;
+    }
+
+    
+    #linea_de_tiempo{
+        width: 580px;
+        height: 270px;
+        margin-left: 10px;
+        clear: both;
+    }    
+    
+    #linea_de_tiempo img{
+        width: 100%;
+    }
+    
+    /* NUESTROS ESTILOS*/
+    
+    #estilos{
+        width: 580px;
+        background-color: #8a4514;
+    }
+
+    #tabla_de_productos{
+        width: 580px;
+        height: 1220px;
+
+    }
+    
+    .marco{
+        width: 580px;
+        height: 600px;
+        padding-right: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .submarco{
+        width: 560px;
+        clear: both;
+        margin: 5px;
+    }
+    
+    h4{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    
+    
+    .detalle_producto{
+        width: 270px;
+        height: 280px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    /* NUESTROS PRODUCTOS*/
+    
+    #producto{
+        width: 580px;
+        clear: both;
+        background-color: #8a4514;        
+    }
+    
+       
+    .fila1{
+        width: 193px;
+        height: 50px;
+    }
+  
+    
+    #fila2_barril_foto{
+        width: 193px;
+        height: 193px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #fila2_botellas_video{
+        width: 193px;
+        height: 193px;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-sizing: border-box;
+    }
+    #fila2_botellas_video video{
+    margin-left: 25%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    }
+    
+    #fila2_choperas_foto{
+        width: 193px;
+        height: 193px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #fila3_barril, #fila3_botellas, #fila3_choperas{
+        width: 180px;
+        height: 380px;
+        font-size: 20px;
+        margin: 6px;
+        box-sizing: border-box;
+    }
+       
+    .fila4{
+        width: 190px;
+        height: 100px;
+        margin-top: 15px;
+        margin-left: 1px;
+    }
+    .fila4 p{
+        margin-top: 10px;
+    }
+    
+    /*CONTACTOS*/
+    
+    #contactos{
+        width: 580px;
+        background-color:#8a4514;
+    }
+   
+    #botonera_de_frases{
+        width: 580px;
+        height: 480px;
+    }
+    
+    #botonera_de_frases ul{
+        width: 580px;
+        height: 480px;
+    }
+    
+    #botonera_de_frases ul li{
+        width: 290px;
+    }
+    
+    #botonera_de_frases ul li a {
+        width: 270px;
+    }
+      
+    
+    
+    /*FOOTER*/
+    
+   
+    #cupon{ 
+        width: 580px;
+        margin-left: 40px;
+    }
+    button{
+        margin-left: 0px;   
+    }
+       
+    #derechos{
+        width: 580px;
+    }
+   
+}
+
+
+/*media max 599*/
+
+@media screen and (min-width:320px) and (max-width:599px){
+   
+    header, section, footer{
+        width: 90%;
+    }
+
+    header{
+        height: 560px;
+    }
+    section{
+        height: 8650px;
+    }
+    
+    /* HEADER*/
+   
+    #marca{
+        width: 100%;
+    }
+    #marca img{
+        width: 100%;
+        margin-left: 0%;
+    }
+  
+    #botonera_principal{
+        width: 100%;
+        height: 320px;
+    }
+
+     
+    #botonera_principal ul li{
+        display:block;
+    }
+    
+    #botonera_principal ul li a{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+        
+    #botonera_principal ul li a{
+        width: 100%;
+        font-size: 23px;
+    }
+      
+    
+    /*NOSOTROS Y NUESTRA HISTORIA*/
+    
+    #nosotros_historia{
+        width: 100%;
+        height: 70px;
+        font-size: 23px;
+    }
+    #fila1_izq{
+        width: 100%;
+        height: 320px;
+        clear: both;
+        margin-right: 1px;
+    }
+    
+    #fila1_izq img{ 
+       width: 95%;
+       margin-top: 5px;
+    }
+    
+    #fila1_centro{
+        width: 100%;
+        height: 550px;
+        clear: both;
+        font-size: 20px;       
+    }
+    #fila1_der{
+        width: 100%;
+        clear: both;
+        height: 250px;
+        margin: 10px;
+    }
+
+    
+    #linea_de_tiempo{
+        width: 100%;
+        height: 280px;
+        margin-left: 5px;
+        clear: both;
+    }    
+    
+    #linea_de_tiempo img{
+        width: 100%;
+    }
+    
+    /* NUESTROS ESTILOS*/
+    
+    #estilos{
+        width: 100%;
+        height: 80px;
+        background-color: #8a4514;
+    }
+
+    #tabla_de_productos{
+        width: 100%;
+        height: 5400px;
+
+    }
+    
+    .marco{
+        width: 98%;
+        height: 650px;
+        padding-right: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+    .submarco{
+        width: 96%;
+        height: 650px;
+        clear: both;
+        margin: 5px;
+        border-radius: 40px;
+        -moz-border-radius: 40px;
+        -webkit-border-radius: 40px;
+    }
+    
+    h4{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    #foto_session_ipa{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_honey{ 
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_irish_red{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_new_england_ipa{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_golden_wheat{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_oatmeal{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_summer_ipa{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    #foto_old_ale{
+        width: 98%;
+        clear: both;
+        border-radius: 50px 50px 50px 50px;
+        margin: 5px;
+    }
+    .detalle_producto{
+        width: 100%;
+        height: 280px;
+        clear: both;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    /* NUESTROS PRODUCTOS*/
+    
+    #producto{
+        width: 98%;
+        height: 100px;
+        clear: both;
+        background-color: #8a4514;     
+    }
+   
+    .fila1{
+        width: 33%;
+        height: 45px;
+        margin-top: 8px;
+        margin-bottom: 3px;
+    }
+    .fila1 h3{
+        margin-top: 5px;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+  
+    
+    #fila2_barril_foto{
+        width: 32%;
+        height: 180px;
+        margin-top:5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #fila2_botellas_video{
+        width: 32%;
+        height: 180px;
+        margin-left: 0px;
+        margin-right: 0px;
+        box-sizing: border-box;
+    }
+    #fila2_botellas_video video{
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        }
+       
+    #fila2_choperas_foto{
+        width: 32%;
+        height: 180px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #fila3_barril, #fila3_botellas, #fila3_choperas{
+        width: 30%;
+        height: 550px;
+        font-size: 15px;
+        margin: 3px;
+        box-sizing: border-box;
+    }
+       
+    .fila4{
+        width: 30%;
+        height: 90px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .fila4 p{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+   
+    
+    /*CONTACTOS*/
+    
+    #contactos{
+        width: 98%;
+        height: 80px;
+        background-color:#8a4514;
+    }
+   
+    #botonera_de_frases{
+        width: 98%;
+        height: 480px;
+    }
+    
+    #botonera_de_frases ul{
+        width: 98%;
+        height: 480px;
+    }
+    
+    #botonera_de_frases ul li{
+        width: 45%;
+    }
+    
+    #botonera_de_frases ul li a {
+        width: 45%;
+    }
+      
+    
+    
+    /*FOOTER*/
+    
+   
+    #cupon{ 
+        width: 100%;
+        margin-left: 0%;
+    }
+    button{
+        margin-left: 0px;   
+    }
+       
+    #derechos{
+        width: 100%;
+        height: 150px;
+    }
+   
+
+}
+
 }
