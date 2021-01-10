@@ -1,7 +1,7 @@
 # brugge_webdesign
 
 ## What I did 🚀
-This is my first proyect as a WebDesigner. <br/>
+This is my first project as a WebDesigner. <br/>
 I will create the web page to htts://brugge.com.ar <br/>
 Everyone can also follow them at @bruggecerveza, they are really nice people, very hard work,and create a delicious artesanal beer <br/>
 It is a Product Web Page with responsive design, with four sections: Us and our history, Our styles, Our Products and Contact us. <br/>
