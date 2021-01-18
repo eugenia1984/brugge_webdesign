@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/formulario.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brugge cerveza artesanal</title>
+</head>
+<body>
+    <header>
+        <div id="marca"> <img src="../img/logo_horizontal.png" alt="logo de Brugge cerveza artesanal"> </div>
+    </header>
+
+    <section>
+     
+        <div id="titulo">  
+            <h1>Completá los datos para obtener tu descuento</h1>
+            <p> Gracias por tomarte el tiempo en completarlo</p>
+        </div>
+
+        <form id="formulario" method="POST" action="#">
+
+            <div class="formulario_grupo">
+                <label id="nombre-label" form="nombre"> <p>Nombre y Apellido: </p>  </label>
+                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Completá con tu nombre y apellido" required/> 
+            </div>
+
+            <div class="formulario_grupo">
+                <label id="correo-label" form="correo"> <p> Correo electrónico:</p> </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Completá con tu correo electrónico" required/>
+            </div>
+
+            <div class="formulario_grupo">
+                <label> <p> Teléfono:</p> </label> 
+                <input type="tel" name="telefono" id="email" class="form-control" placeholder="Completá con tu teléfono, incluí el código de área" required/> 
+            </div>
+            
+            <menu class="formulario_grupo">
+                <p> Querés recibir nuestras promociones? </p>
+                <label> <input name="Si-No"  value="Si" type="radio" class="input-radio"/> Si </label>
+                <label> <input name="Si-No" value="Si" type="radio" class="input-radio"/> No </label>
+            </menu>
+            
+            <menu class="formulario_grupo">
+                <p> Qué estilo preferís? <br/> (Podés elegir más de uno) </p>
+                <label> <input name="prefer" value="session ipa" type="checkbox" class="input-checkbox"/> SESSION IPA </label>
+                <label> <input name="prefer" value="honey" type="checkbox" class="input-checkbox"/> HONEY </label>
+                <label> <input name="prefer" value="rish red" type="checkbox" class="input-checkbox"/> RISH RED </label>
+                <label> <input name="prefer" value="new england ipa" type="checkbox" class="input-checkbox"/> NEW ENGLAND IPA <label>             
+                <label> <input name="prefer" value="golden wheat" type="checkbox" class="input-checkbox"/> GOLDEN WHEAT  </label>
+                <label> <input name="prefer" value="oatmeal stout" type="checkbox" class="input-checkbox"/> OATMEAL STOUT </label>
+                <label> <input name="prefer" value="summer ipa" type="checkbox" class="input-checkbox"/> SUMMER IPA </label>
+                <label> <input name="prefer" value="old ale" type="checkbox" class="input-checkbox"/> OLD ALE </label>
+            </menu> 
+                       
+       
+            <div id="comentario">  </div>
+                <div class="formulario-group">
+                <p> Algún comentario o sugerencia?</p>
+                <textarea id="comments" class="input-textarea" name="comentario" placeholder="Ingresa tu comentario..."></textarea>
+            </div>
+        </form>
+
+        <div id="descuento">
+            <button type="submit" id="submit" class="submit-button">  Obtener mi descuento </button>
+        </div>
+         
+        <article id="mensaje">
+            <p> Estarás recibiendo tu cupón de descuento por Whastapp </p>
+        </article>
+         
+    </section>
+
+
+    <footer>
+        <article id="derechos">
+            <p>Beber con moderación. Prohibida su venta a menores de 18 años</p>
+            <p> © Brugge. Todos los derechos reservados</p>
+        </article>
+    </footer>
+
+</body>
+</html>
