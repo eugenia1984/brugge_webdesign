@@ -1,3 +1,5 @@
+ENCLISH
+
 # brugge_webdesign
 
 ## What I did 🚀
@@ -30,3 +32,39 @@ _If you want to see how this project was, you can do it from:_
 ## Notes
 I appreciate your interest in this Project <br/>
 ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn]( http://www.linkedin.com/in/maríaeugeniacosta) 
+---
+
+ESPAÑOL
+
+# brugge_webdesign
+
+## Lo que hice 🚀
+Este es mi primer proyecto como diseñador web. <br/>
+Crearé la página web para htts: //brugge.com.ar <br/>
+Todos también pueden seguirlos en @bruggecerveza, son personas realmente agradables, muy trabajadores y crean una deliciosa cerveza artesanal <br/>
+Es una Página Web de Producto con diseño responsive, con cuatro secciones: Nosotros y nuestra historia, Nuestros estilos, Nuestros Productos y Contáctenos. <br/>
+En los productos agregué un video y diferentes call to action, para que la gente pueda ordenar por whatsapp. <br/>
+En la sección contáctanos y realizas enlaces a: Instagram, Whatsapp, Email, y otra página web (donde puedes ver dónde puedes comprar las cervezas). <br / <
+Y al final agregué un botón para obtener un cupón de descuento, por lo que se retrasará un formulario. <br/>
+Es un proyecto aún en progreso, así que cualquiera puede hacer sugerencias, ¡será genial !.
+
+## Contenido 🚀
+_Este proyecto solo tiene una sucursal maestra, era un proyecto pequeño por lo que no necesitaba más sucursales_
+
+## Construido con 🛠️
+_ ** HTML 5 ** y ** CSS3 ** _
+
+## Demo 📦
+_Si quieres ver cómo fue este proyecto, puedes hacerlo desde: _
+: arrow_right: * https: //eugenia1984.github.io/brugge_webdesign/.** <br/>
+
+## Por favor: 🎁
+
+* Comparte este proyecto con otros 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+* Muchas gracias 🤓.
+
+---
+## Notas
+Agradezco su interés en este proyecto <br/>
+⌨️ con ❤️ de [María Eugenia Costa] (https://github.com/eugenia1984) 😊 y sígueme en [LinkedIn] (http://www.linkedin.com/in/maríaeugeniacosta)
