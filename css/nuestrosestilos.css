@@ -1,0 +1,28 @@
+/******* Card******/
+.card {
+  border: 1px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  min-height: 4rem;
+  font-size: 25px;
+  text-align: center;
+}
+.cover-small {
+  height: 300px;
+}
+
+.card-text {
+  height: 24rem;
+}
+
+/****** Botón*****/
+.bg-secondary{
+  background-color: #3D1C04 !important;
+  height: 5rem;
+  width: 12rem;
+  font-size: 14px;
+}

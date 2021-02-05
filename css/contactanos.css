@@ -1,0 +1,59 @@
+.col-sm {
+  padding-left: 3rem;
+}
+
+/*******iconos de contacto*****/
+.link-contacto {
+ color: var(--marron);
+ text-decoration: none;
+ margin: 40px;
+}
+
+.link-contacto:hover {
+  color: var(--naranja);
+  text-decoration: none;
+ }
+
+ .texto-link-contacto {
+   font-size: 30px;
+   font-weight: bolder;
+   margin: 45px;
+ }
+
+
+
+/***************Formulario*****/
+
+label {
+  font-size: 26px;
+  padding-top: 1rem;
+}
+
+.form-control {
+  height: 4rem;
+  cursor: pointer;
+  font-size: 26px !important;
+}
+
+.form-control:focus {
+  border-color: var(--marron);
+  box-shadow: 0 0 0 0.35rem rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 10%);
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 10%);
+} 
+/*******Boton*******/
+.btn {
+  padding: 12px;
+  margin: 10px 0px 20px 80px;
+}
+.btn-primary {
+  background-color: var(--marron);
+  color: var(--naranja);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--naranja);
+  color: var(--marron);
+  padding: 15px;
+}
