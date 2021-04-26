@@ -3,26 +3,21 @@ header, section, footer{
     margin-left: auto;
     margin-right: auto;
 }
-
 header{
     height: 230px;
     background-color:#F4AC52;
 }
-
 body{
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
-
 section{
     height: 600px;
 }
-
 h2, h3, p{
     color: #3D1C04;
 }
-/* HEADER*/
-
+/************** HEADER***************/
 #marca{
     width: 960px;
     height: 230px;
@@ -35,8 +30,7 @@ h2, h3, p{
     height: 100%;
     margin-left: 5%;
 }
-
-/*SECTION*/
+/**********SECTION***********/
 #titulo{
     background-color: #3D1C04;
     color: #F4AC52;
@@ -47,8 +41,6 @@ h2, h3, p{
     line-height: 100px; 
     letter-spacing: 4px;
 }
-
-
 h2{
     background: -moz-linear-gradient(top, #fcdeba, #f0bf83 30%, #F4AC52 70%);
     background: -webkit-linear-gradient(top, #fcdeba, #f0bf83 30%, #F4AC52 70%);
@@ -61,7 +53,6 @@ h2{
 h3{
     text-shadow: -5px 5px 3px #F4AC52;
 }
-
 ul{
     margin: 0px;
     padding: 0px;
@@ -70,39 +61,74 @@ ul{
 ul li p a{
     text-decoration: none;
 }
-
-/*FOOTER*/
-
-footer{
-    height: 80px;
+/******ARTICLE VISITANOS*******/
+#visitanos {
+    width: 100%;
+    height: 100px;
 }
-
-
-#derechos{
-    width: 960px;
-    height: 80px;
+#lienzo1 {
+    color: #3D1C04;
+}
+/****WEB STORAGE****/
+#webStorage {
+    background-color: rgba(244, 171, 82, 0.144);
+    padding: 20px;
+}
+#notasCliente {
+    padding: 15px;
+}
+.tarea-cliente-label, .tarea-cliente-id{
+    display: block;
+    padding: 15px;
+}
+.ancho-personalizado {
+    width: 90%;
+    margin:0 auto;
+    height: 48px;
+    line-height: 18px;
+}
+.tarea-cliente-select {
+    height: 30px;
+}
+.tarea-cliente-boton {
+    display: block;
+    margin: 10px auto;
+}
+/******FOOTER*********/
+footer {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
     background-color: #3D1C04;
-    float: left;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-#derechos p{
+    box-sizing: border-box;
+    padding: 1rem;
     color: #F4AC52;
 }
-
+.footer-inner{
+    width: 30%;
+    display:flex;
+    align-items: center;
+    padding: 1rem;
+}     
+#derechos-izquierda p {
+    color: #F4AC52;
+}
+#derechos-derecha {
+    display:flex;
+    justify-content: flex-end;  
+}
+#derechos-derecha p {
+    color: #F4AC52;
+}
+/**************media querie 600px - 1280px*************/
 @media screen and (min-width:600px) and (max-width:1280px){
     header, section, footer{
         width: 90%;
     }
-    
     section{
         height: 610px;
     }
-    
-    /* HEADER*/
-    
+    /************* HEADER************/
     #marca{
         width: 100%;
     }
@@ -110,31 +136,22 @@ footer{
         height: 100%;
         margin-left: 0%;
     }
-    
-    /*SECTION*/
+    /****SECTION**************/
     #titulo{
         width: 100%;
     }
-    
-    
     h2{
         width: 60%;
+    } 
+    /***LOCAL STORAGE***/
+    .ancho-personalizado {
+        width: 70%;
+        margin:0 auto;
+        height: 42px;
+        line-height: 18px;
     }
-       
-       
-    /*FOOTER*/
-    
-    footer{
-        height: 80px;
-    }
-     
-    #derechos{
-        width: 100%;
-  
-    }
-   
 }
-
+/**********Media querie 320px - 599px************/
 @media screen and (min-width:320px) and (max-width:599px){
     header, section, footer{
         width: 90%;
@@ -143,16 +160,11 @@ footer{
     }
     header{
         height: 100px;
-        
     }
-    
     section{
         height: 620px;
     }
-    
-    
-    /* HEADER*/
-    
+    /*************** HEADER************/
     #marca{
         width: 90%;
         height: 100px;
@@ -164,19 +176,15 @@ footer{
         margin-top: auto;
         margin-bottom: auto;
     }
-    
-    /*SECTION*/
+    /***********SECTION***********/
     #titulo{
         width: 100%;
         height: 100px;
         margin: 5px auto 5px auto; 
     }
-    
     h2{
         width: 80%;
     }
-    
-    
     ul{
         margin: 0px;
         padding: 0px;
@@ -185,18 +193,10 @@ footer{
     ul li p a{
         text-decoration: none;
     }
+    /***LOCAL STORAGE***/
+    .ancho-personalizado {
+        width: 90%;
+        height: 60px;
+    }
     
-    /*FOOTER*/
-    
-    footer{
-        height: 140px;
-    }
-        
-    #derechos{
-        width: 100%;
-        height: 140px;
-    }
-    #derechos p{
-        margin: 10px 15px 10px 15px;
-    }
 }
