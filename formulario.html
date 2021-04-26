@@ -1,78 +1,98 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/formulario.css" >
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="./css/donde_estamos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brugge cerveza artesanal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+<!---- HEADER ---->
     <header>
         <div id="marca"> <img src="./img/logo_horizontal.png" alt="logo de Brugge cerveza artesanal"> </div>
     </header>
-    <section>
-        <div id="titulo">  
-            <h1>Completá los datos para obtener tu descuento</h1>
-            <p> Gracias por tomarte el tiempo en completarlo</p>
-        </div>
-        <!-------Formulario---------->
-        <form id="formulario" method="POST" action="https://formspree.io/f/mvovngeo">
-            <div class="formulario_grupo">
-                <label id="nombre-label" form="nombre"> <p>Nombre y Apellido: </p>  </label>
-                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Completá con tu nombre y apellido" maxlength="60"> 
-            </div>
-            <div class="formulario_grupo">
-                <label id="correo-label" form="correo"> <p> Correo electrónico:</p> </label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Completá con tu correo electrónico" maxlength="60">
-            </div>
-            <div class="formulario_grupo">
-                <label> <p> Teléfono:</p> </label> 
-                <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Completá con tu teléfono, incluí el código de área"/> 
-            </div>
-            <menu class="formulario_grupo">
-                <p> Querés recibir nuestras promociones? </p>
-                <label> <input name="Si-No"  value="Si" type="radio" class="input-radio"/> Si </label>
-                <label> <input name="Si-No" value="Si" type="radio" class="input-radio"/> No </label>
-            </menu>
-            <menu class="formulario_grupo">
-                <p> Qué estilo preferís? <br/> (Podés elegir más de uno) </p>
-                <label> <input name="prefer" value="session ipa" type="checkbox" class="input-checkbox"/> SESSION IPA </label>
-                <label> <input name="prefer" value="honey" type="checkbox" class="input-checkbox"/> HONEY </label>
-                <label> <input name="prefer" value="rish red" type="checkbox" class="input-checkbox"/> RISH RED </label>
-                <label> <input name="prefer" value="new england ipa" type="checkbox" class="input-checkbox"/> NEW ENGLAND IPA <label>             
-                <label> <input name="prefer" value="golden wheat" type="checkbox" class="input-checkbox"/> GOLDEN WHEAT  </label>
-                <label> <input name="prefer" value="oatmeal stout" type="checkbox" class="input-checkbox"/> OATMEAL STOUT </label>
-                <label> <input name="prefer" value="summer ipa" type="checkbox" class="input-checkbox"/> SUMMER IPA </label>
-                <label> <input name="prefer" value="old ale" type="checkbox" class="input-checkbox"/> OLD ALE </label>
-            </menu> 
-                       
-            <div id="comentario">  </div>
-                <div class="formulario-group">
-                <p> Algún comentario o sugerencia?</p>
-                <textarea id="comments" class="input-textarea" name="comentario" placeholder="Ingresa tu comentario... (recordá que tenés un máximo de 300 caracteres)" maxlength="300"></textarea>
-            </div>
-            <div id="descuento">
-                <input type="submit" id="submit" class="submit-button">  
-            </div>
-        </form>
-        <!---Mensaje------->
-        <article id="mensaje">
-            <p> Estarás recibiendo tu cupón de descuento por Whatsapp </p>
-        </article>
-        <!--Imagen SVG animada-->
-        <section id="cerveza-animada">
-            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="200px" viewBox="0 0 560 960" style="enable-background:new 0 0 560 960;" xml:space="preserve">
-                <path class="cerveza" d="M147,386.582c0,0,0.833,235.875,0.833,257.209S168.333,668,172.667,668s145.667,0,154.333,0s17-11,17-28s0-253,0-253L147,386.582z"/>
-                <path class="espuma" d="M344,387l-132-0.418V422c0,0-2,16.75-20.75,16.75S171,428.25,171,423.5c0-5.25,0-36.5,0-36.5s-12.25-0.334-24-0.418c-19.625-2.457-23-25.332-3.625-38.832c-7.5-30.25,64.063-94.25,107.896-16.418c15.333-15.5,39.781-19,49.115,14.168c3.666-24.834,10.437-43.25,42.974-43.25c28.668,0,41.457,27.082,41.457,41.422C384.814,375,356.732,387,346.215,387H344z"/>
-                <path class="handle" d="M348,597c0,0,27.75,0,53,0c14,0,20.5-16.5,20.5-25.5c0-4.25,0.355-99,0.355-113.75S407.75,437,399.25,437S348,437,348,437"/>
-                <path class="outline" d="M147,385.481c0,0,0.833,235.875,0.833,257.209s20.5,24.209,24.834,24.209s145.667,0,154.333,0s17-11,17-28s0-48,0-48v-4v-201l-132-0.418v35.418c0,0-2,16.75-20.75,16.75s-20.25-10.5-20.25-15.25c0-5.25,0-36.5,0-36.5S158.75,385.565,147,385.481c-19.625-2.457-23-25.332-3.625-38.832c-7.5-30.25,64.063-94.25,107.896-16.418c15.332-15.5,39.78-19,49.114,14.168c3.666-24.834,10.437-43.25,42.974-43.25c28.668,0,41.457,27.082,41.457,41.422c-0.002,31.328-28.084,43.328-38.602,43.328"/>
-                <line class="lineas" x1="196" y1="480" x2="196" y2="562"/>
-                <line class="lineas" x1="250" y1="480" x2="250" y2="562"/>
-                <line class="lineas" x1="304" y1="480" x2="304" y2="562"/>
-            </svg>
-        </section>
+<!----SECTION DONDE ESTAMOS---->
+    <section id="titulo">
+        <h1>Dónde estamos?</h1>
     </section>
-    <!------FOOTER-------->
+    <!---Aca aplico el objeto creado con canva, en este caso esh un texto-->
+    <article id="visitanos">
+        <canvas id="lienzo1" width="300" height="150">Su navegador no soporta el elemento canvas</canvas>
+    </article>
+    <article id="general">
+        <ul>
+            <li> <h2> Nuestra fábrica </h2>
+                <h3> Brugge Cerveza Artesanal</h3>
+                <p> Hipólito Yrigoyen 2731, Martinez </p>
+                <p> Teléfono: 15 6589-6401 </p>
+                <p> <a href="https://api.whatsapp.com/send/?phone=5491165896401&text&app_absent=0" target="_blank"> Contactanos por Whatsapp </a> </p>
+            </li>
+            <li> <h2> Palermo</h2>
+                <h3> Cervecería Valk Taproom</h3>
+                <p> Jorge Luis Borges 1654 </p>
+                <p> Teléfono: 011 4831-2777 </p>
+                <p> <a href="https://m.facebook.com/valktaproom.com.ar/" target="_blank"> Contactalos por Facebook </a> </p>
+                <h3> Burger Forever </h3>
+                <p> José A. Cabrera 5187</p>
+                <p> Teléfono: 011 15-3268-3309 </p>
+                <p> <a href="https://api.whatsapp.com/send?phone=5491132683309&text=Hola%2C%20decinos%20cu%C3%A1l%20es%20tu%20pedido%3F" target="_blank"> Mandales un Whatsapp</a></p>
+            </li>
+            <li>
+                <h2>San Isidro</h2>
+                <h3> Buffalos Hamburguesería </h3>
+                <p> Av. del Libertador 13946, Martinez</p>
+                <p>Teléfono: 011 4793-0981 </p>
+                <p> <a href="https://www.pedidosya.com.ar/restaurantes/san-isidro/buffalos-hamburgueseria-martinez-menu?utm_campaign=google_reserve_place_order_action&utm_medium=organic&utm_source=google" target="_blank">  Hacé tu pedido</a></p>
+            </li>
+            <li>
+                <h2>José C. Paz</h2>
+                <h3> El Cultural Patio Cervecero</h3>
+                <p>Zuviría 4543</p>
+                <p> Teléfono:  011 3503-9465</p>
+                <p> <a href="https://www.instagram.com/elculturalpatiocervecero/?igshid=2hey3tpskak2" target="_blank"> Seguilos en Instagram</a></p>
+            </li>
+        </ul>
+    </article>
+    <!----WEB STORAGE---->
+    <article id="webStorage">
+        <div class="inspiracion__section-div inspiracion__section-div-notas">
+            <h2>¡Agendá tu salida!</h2>
+        </div>
+
+        <div id="notasCliente" class="notasCliente">
+            <p>Queremos que nos conozcas, por eso te compartimos todos los lugares donde podés encontrarnos!</p>
+            <p>Te invitamos a que escribas tus próximas visitas!</p>
+            <p>Esta información no se envará a nosotros, quedará almacenada en tu computadora o celular para que puedas ir modificándola.</p>
+
+            <form class="tarea-cliente-formulario" method="POST" action="https://formspree.io/f/mvovngeo">
+                <label class="tarea-cliente-label" for="id">Lugar a visitar :</label>
+                <input class="tarea-cliente-input ancho-personalizado" type="text" id="tarea-cliente-id" name="id" min="1" max="100" placeholder=" Ingresa el nombre del lugar a visitar">
+                <label class="tarea-cliente-label" for="desc">Podés agregar las cervezas que pediras acá :</label>
+                
+                <textarea class="tarea-cliente-textarea ancho-personalizado" id="tarea-cliente-desc" name="desc" placeholder=" Para no olvidar el pedido, ya podés ir eligiendo entre nuestros 8 estilos"></textarea>
+
+                <label class="tarea-cliente-label" for="urg">Seleccioná el nivel de urgencia de la visita :</label>
+                
+                <select class="tarea-cliente-select" name="urg" id="tarea-cliente-urg">
+                    <option value="">Seleccionar el nivel de urgencia</option>
+                    <option value=" Muy urgente">Muy urgente</option>
+                    <option value=" Urgente">Urgente</option>
+                    <option value=" Poco urgente">Poco urgente</option>
+                </select>
+
+                <label class="tarea-cliente-label" for="fecha">Fecha de la visita al local :</label>
+                <input class="tarea-cliente-input" type="date" name="fecha" id="tarea-cliente-fecha">
+
+                <input class="tarea-cliente-boton" type="button" id="tarea-cliente-guardar" value="Guardar"onclick="nuevaTarea()">
+            </form>
+            <div id="tareas-pendientes" class="tareas-pendientes"></div>
+        </div>
+    </article>
+<!------FOOTER-------->
     <footer>
         <div class="footer-inner" id="derechos-izquierda">
             <p> Beber con moderación. Prohibida su venta a menores de 18 años </p>
@@ -81,6 +101,7 @@
             <p> © 2021 Brugge. Todos los derechos reservados.</p>
         </div>
     </footer>
-<script type="text/javascript" src="./js/validar_formulario.js"></script>
+    <script type="text/javascript" src="./js/texto.js"></script>
+    <script type="text/javascript" src="./js/webstorage.js"></script>
 </body>
 </html>
