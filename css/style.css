@@ -1,81 +1,59 @@
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
 header, section, footer{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
-
 header{
-    height: 295px;
+    height: 120px;
     background-color:#F4AC52;
 }
-
 section{
-    height: 2860px;
+    height: 3400px;
 }
-
-p{
-    color: #3D1C04;
+p {
+    color:#3D1C04;
 }
-/* HEADER*/
-
+/********** HEADER***************/
 #marca{
     width: 960px;
-    height: 230px;
+    height: 100px;
     background-color: #F4AC52;
     clear: both;
     margin-left: auto;
     margin-right: auto;
 }
 #marca img{
-    height: 100%;
-    margin-left: 23%;
+    height: 90%;
+    margin-left: 40%;
 }
-
 h2{
     font-size: 20px;
     box-sizing: border-box;
     text-align: center;
     color: #F4AC52;
 }
-
-#botonera_principal{
-    width: 960px;
-    height:65px;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    background-color: #3D1C04;
+/******** Icono de la copa para menu hamburguesa******/
+.copa {
+    width: 30%;
+    margin: 4px 35%;
 }
-
-#botonera_principal ul{
+#botonera {
+    background-color:#3D1C04;
+    color: #F4AC52;
+    width: 30%;
+    float: left;
+}
+#botonera ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
-#botonera_principal ul li{
-    display:inline;
-}
-
-#botonera_principal ul li a{
-    display: inline-block;
+#botonera ul li a {
     text-decoration: none;
-    width: 237px;
-    height: 65px;
-    margin-bottom: 15px;
-    background-color: #3D1C04;
-    color:  #F4AC52;
-    clear: both;
-    border: solid 3px #3D1C04;
-    box-sizing: border-box;
 }
-
-#botonera_principal ul li a:hover{
-    background-color:#3d3733;
-    color: #3D1C04;
-}
-
 #carrito_de_compras{
     width: 70px;
     height:70px;
@@ -87,9 +65,14 @@ h2{
 #carrito_de_compras img{
     height: 100%;
 }
-
-/*NOSOTROS Y NUESTRA HISTORIA*/
-
+/********** MENSAJE **************/
+#mensaje {
+    height: 120px;
+    margin : 0 auto;
+    width: 50%;
+    text-align: right;
+}
+/************NOSOTROS Y NUESTRA HISTORIA**********/
 #nosotros_historia{
     width: 960px;
     height: 50px;
@@ -98,43 +81,57 @@ h2{
     padding-top: 2px;
     box-sizing: border-box;
 }
+/******Imagen del equipo*****/
 #fila1_izq{
     width: 300px;
     height: 200px;
     float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-    margin-right: 7.5px;
+    margin: 8px 7px 8px 10px;
 }
-
-#fila1_izq img{ 
-   width: 100%;
-   margin-top: 5px;
+/******Animacion***********/
+#fila1_izq img {
+    width: 100%;
+    animation-name: animado;
+    animation-duration: 1.5s;
+    animation-iteration-count: 11;
+    animation-direction: alternate;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
 }
-
+@keyframes animado {
+    from {
+        padding-left: 10%;
+        width: 80%;
+    }
+    to {
+        padding-left: 0%;
+        width: 100%;
+    }
+}
+/***********Hover con transition***********/
+#fila1_izq img:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+    filter: sepia(60%);
+}
+/*******Texto sobre Brugge*******/
 #fila1_centro{
     width: 300px;
     height: 200px;
     float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
+    margin: 5px 7.5px;
     font-size: 12px;
     box-sizing: border-box;
     text-align: center;
 }
+/******Mapa*******/
 #fila1_der{
     width: 300px;
     height: 200px;
     float: left;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-left: 7.5px;
-    margin-right: 15px;
+    margin: 5px 15px 10px 7.5px;
 }
-#fila1_der img{
+#fila1_der iframe{
     margin-top: 5px;
     width: 100%;
 }
@@ -146,13 +143,10 @@ h2{
     clear: both;
     margin-bottom: 10px;
 }    
-
 #linea_de_tiempo img{
     height: 100%;
 }
-
-/* NUESTROS ESTILOS*/
-
+/****** NUESTROS ESTILOS***********/
 #estilos{
     width: 960px;
     height: 50px;
@@ -172,7 +166,6 @@ h2{
     margin-top: 25px;
     box-sizing: border-box;
 }
-
 .marco{
     width: 960px;
     height: 300px;
@@ -195,13 +188,10 @@ h2{
     -webkit-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
     box-sizing: border-box;
 }
-
 h4{
     margin-top: 3px;
     margin-bottom: 0px;
 }
-
-
 #foto_session_ipa{
     height: 285px;
     width: 285px;
@@ -210,7 +200,6 @@ h4{
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
 }
-
 #foto_honey{
     width: 285px;
     height: 285px;
@@ -219,7 +208,6 @@ h4{
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
 }
-
 #foto_irish_red{
     width: 280px;
     height: 280px;
@@ -227,8 +215,9 @@ h4{
     background-image: url(../img/irish_red.jpg);
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
+    -moz-border-radius: 7px 100px 100px 7px;
+    -webkit-border-radius: 7px 100px 100px 7px;
 }
-
 #foto_new_england_ipa{
     width: 280px;
     height: 280px;
@@ -236,8 +225,9 @@ h4{
     background-image: url(../img/new_england_ipa.jpg);
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
+    -moz-border-radius: 7px 100px 100px 7px;
+    -webkit-border-radius: 7px 100px 100px 7px;
 }
-
 #foto_golden_wheat{
     width: 280px;
     height: 280px;
@@ -245,8 +235,9 @@ h4{
     background-image: url(../img/golden_wheat.jpg);
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
+    -moz-border-radius: 7px 100px 100px 7px;
+    -webkit-border-radius: 7px 100px 100px 7px;
 }
-
 #foto_oatmeal{
     width: 280px;
     height: 280px;
@@ -254,8 +245,9 @@ h4{
     background-image: url(../img/oatmeal_stout.jpg);
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
+    -moz-border-radius: 7px 100px 100px 7px;
+    -webkit-border-radius: 7px 100px 100px 7px;
 }
-
 #foto_summer_ipa{
     width: 280px;
     height: 280px;
@@ -263,8 +255,9 @@ h4{
     background-image: url(../img/summer_ipa.jpg);
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
+    -moz-border-radius: 7px 100px 100px 7px;
+    -webkit-border-radius: 7px 100px 100px 7px;
 }
-
 #foto_old_ale{
     width: 280px;
     height: 280px;
@@ -272,8 +265,9 @@ h4{
     background-image: url(../img/old_ale.jpg);
     background-size: cover;
     border-radius: 7px 100px 100px 7px;
+    -moz-border-radius: 7px 100px 100px 7px;
+    -webkit-border-radius: 7px 100px 100px 7px;
 }
-
 .detalle_producto{
     width: 160px;
     height: 280px;
@@ -281,12 +275,9 @@ h4{
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;  
 }
-
-/* NUESTROS PRODUCTOS*/
-
+/******** NUESTROS PRODUCTOS************/
 #producto{
     width: 960px;
     height: 50px;
@@ -295,16 +286,13 @@ h4{
     margin-right: auto;
     background-color: #3D1C04;
     padding-top: 2px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
-
 h3{
     text-align: center;
     font-size: 25px;
     box-sizing: border-box;
 }
-
 .fila1{
     width: 320px;
     height: 50px;
@@ -319,7 +307,6 @@ h3{
     margin-top: 9px;
     letter-spacing: 5px;
 }
-
 #fila2_barril_foto{
     width: 300px;
     height: 300px;
@@ -330,13 +317,14 @@ h3{
     margin-bottom: 5px;
     margin-left: 15px;
     margin-right: 7.5px;
-    border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
+    border-radius: 35px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
 }
+/*******Video de las botellas******/
 #fila2_botellas_video{
     width: 300px;
-    height: 300px;
+    height: 250px;
     float: left;
     margin-top:5px;
     margin-bottom: 5px;
@@ -348,7 +336,28 @@ height: 100%;
 margin-left: 20%;
 margin-right: 20%;
 }
-
+/*********botonera de video*******/
+#botonera_video ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+#botonera_video ul li {
+    display: inline;
+    width: 20%;
+}
+#botonera_video ul li a {
+    background-color: #8f420a;
+    border-radius: 40%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px;
+    margin: 0 auto;
+}
+#botonera_video ul li a:hover {
+    background-color: #a55d29;
+}
+/******Foto de chopera*****/
 #fila2_choperas_foto{
     width: 300px;
     height: 300px;
@@ -359,16 +368,17 @@ margin-right: 20%;
     margin-bottom: 5px;
     margin-left: 7.5px;
     margin-right: 15px;
-    border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
+    border-radius: 35px;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
 }
 #fila3_barril{
     width: 280px;
     height: 150px;
     float: left;
     border: solid 2px #4f48441e;
-    -moz-border-radius: 45px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
     -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
@@ -384,7 +394,8 @@ margin-right: 20%;
     height: 150px;
     float: left;
     border: solid 2px #4f48441e;
-    -moz-border-radius: 45px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
     -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
@@ -400,7 +411,8 @@ margin-right: 20%;
     height: 150px;
     float: left;
     border: solid 2px #4f48441e;
-    -moz-border-radius: 45px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
     box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
     -moz-box-shadow: 1px 1px 1px 1px rgba(7, 7, 7, 0.1);
@@ -411,10 +423,10 @@ margin-right: 20%;
     padding: 5px;
     box-sizing: border-box;
 }
-
 .fila4{
     width: 300px;
     height: 50px;
+    background-color: #f4ac52;
     float: left;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -434,9 +446,7 @@ margin-right: 20%;
     text-transform: uppercase;
     font-weight: 600;
 }
-
-/*CONTACTOS*/
-
+/********CONTACTOS************/
 #contactos{
     width: 960px;
     height: 50px;
@@ -448,9 +458,6 @@ margin-right: 20%;
 #contactos h2{
     padding-top: 10px;
 }
-
-
-
 #botonera_de_frases{
     width: 960px;
     height: 250px;
@@ -458,7 +465,6 @@ margin-right: 20%;
     margin-right: auto;
     margin-left: auto;
 }
-
 #botonera_de_frases ul{
     width: 960px;
     height: 250px;
@@ -466,12 +472,10 @@ margin-right: 20%;
     padding: 0;
     list-style: none;
 }
-
 #botonera_de_frases ul li{
     display: inline;
     width: 245px;
 }
-
 #botonera_de_frases ul li a {
     display: inline-block;
     text-decoration: none;
@@ -481,31 +485,22 @@ margin-right: 20%;
     clear: both;
     box-sizing: border-box;
 }
-
 #botonera_de_frases ul li a img{
     width: 40%;
     margin-left: 32%;
 }
-
 #botonera_de_frases ul li :hover{
     background-color: #ebd1b2;
 }
-
-
-
-/*FOOTER*/
-
-footer{
-    height: 130px;
-}
-#cupon{ 
+/**************** Cupon******************/
+#cupon { 
     height: 60px;
     width: 960px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
 }
-button{
+button {
     color: #3d1c04;
     background-color: #F4AC52;
     text-align: center;
@@ -520,74 +515,65 @@ button{
     -webkit-border: 5px 5px 5px 5px solid rgba(243, 243, 243, 0.529);
     border-radius: 15px;
     -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    
+    -webkit-border-radius: 15px;  
 }
-button a{
+button a {
     text-decoration: none;
     color:  #3d1c04;
 }
-
-#derechos{
-    width: 960px;
-    height: 70px;
-    background-color: #3D1C04;
-    float: left;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
+#texto-mouse {
     text-align: center;
+    font-weight: 600;
+    font-size: 26px;
 }
-#derechos p{
+/******FOOTER*********/
+footer {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: #3D1C04;
+    box-sizing: border-box;
+    padding: 1rem;
     color: #F4AC52;
 }
-
-/*media 600 a 1023*/
-
+.footer-inner{
+    width: 30%;
+    display:flex;
+    align-items: center;
+    padding: 2rem;
+}     
+#derechos-izquierda p {
+    color: #F4AC52;
+}
+#derechos-derecha {
+    display:flex;
+    justify-content: flex-end;  
+}
+#derechos-derecha p {
+    color: #F4AC52;
+}
+/*********media 600 a 1023****************/
 @media screen and (min-width:600px) and (max-width:1280px){
     header, section, footer{
         width: 580px;
     }
-
-    header{
-        height: 530px;
-    }
-      
     section{
-        height: 5280px;
+        height: 5500px;
     }
-    
-    /* HEADER*/
-    
+    /******* HEADER***********/
     #marca{
         width: 580px;
     }
-    #marca img{
-        margin-left: 8%;
+    #botonera {
+        width: 40%;
     }
-  
-    #botonera_principal{
-        width: 580px;
-        height: 300px;
-    }
-    
-    #botonera_principal ul li{
-        display:inline;
-    }
-    
-    #botonera_principal ul li a{
-        width: 580px;
-    }
-      
     #carrito_de_compras{
         top: 25px;
         right: 25px;
         z-index: 100;
     }
    
-    
-    /*NOSOTROS Y NUESTRA HISTORIA*/
-    
+    /********NOSOTROS Y NUESTRA HISTORIA**********/
     #nosotros_historia{
         width: 580px;
         background-color: #8a4514; 
@@ -598,12 +584,10 @@ button a{
         height: 380px;
         margin: 5px;
     }
-    
     #fila1_izq img{ 
        width: 98%;
        margin-top: 5px;
     }
-    
     #fila1_centro{
         width: 580px;
         height: 220px;
@@ -613,35 +597,30 @@ button a{
     #fila1_der{
         width: 580px;
         clear: both;
-        height: 440px;
+        height: 260px;
         margin: 10px;
     }
-
-    
+    #fila1_der iframe{
+        width: 95%;
+    }
     #linea_de_tiempo{
         width: 580px;
         height: 270px;
         margin-left: 10px;
         clear: both;
     }    
-    
     #linea_de_tiempo img{
         width: 100%;
     }
-    
-    /* NUESTROS ESTILOS*/
-    
+    /************** NUESTROS ESTILOS*************/
     #estilos{
         width: 580px;
         background-color: #8a4514;
     }
-
     #tabla_de_productos{
         width: 580px;
         height: 1220px;
-
     }
-    
     .marco{
         width: 580px;
         height: 600px;
@@ -654,14 +633,10 @@ button a{
         clear: both;
         margin: 5px;
     }
-    
     h4{
         font-size: 18px;
         text-align: center;
     }
-    
-    
-    
     .detalle_producto{
         width: 270px;
         height: 280px;
@@ -670,22 +645,16 @@ button a{
         font-size: 18px;
         text-align: justify;
     }
-    
-    /* NUESTROS PRODUCTOS*/
-    
+    /************ NUESTROS PRODUCTOS*************/
     #producto{
         width: 580px;
         clear: both;
         background-color: #8a4514;        
-    }
-    
-       
+    } 
     .fila1{
         width: 193px;
         height: 50px;
     }
-  
-    
     #fila2_barril_foto{
         width: 193px;
         height: 193px;
@@ -704,7 +673,6 @@ button a{
     margin-right: 5%;
     box-sizing: border-box;
     }
-    
     #fila2_choperas_foto{
         width: 193px;
         height: 193px;
@@ -718,7 +686,6 @@ button a{
         margin: 6px;
         box-sizing: border-box;
     }
-       
     .fila4{
         width: 190px;
         height: 100px;
@@ -728,103 +695,67 @@ button a{
     .fila4 p{
         margin-top: 10px;
     }
-    
-    /*CONTACTOS*/
-    
+    /*********CONTACTOS****************/
     #contactos{
         width: 580px;
         background-color:#8a4514;
     }
-   
     #botonera_de_frases{
         width: 580px;
         height: 480px;
     }
-    
     #botonera_de_frases ul{
         width: 580px;
         height: 480px;
     }
-    
     #botonera_de_frases ul li{
         width: 290px;
     }
-    
     #botonera_de_frases ul li a {
         width: 270px;
     }
-      
-    
-    
-    /*FOOTER*/
-    
-   
     #cupon{ 
         width: 580px;
-        margin-left: 40px;
     }
     button{
-        margin-left: 0px;   
+        margin-left: 10%;   
     }
-       
-    #derechos{
-        width: 580px;
-    }
-   
 }
 
 
-/*media max 599*/
+/**********media max 599*****************/
 
 @media screen and (min-width:320px) and (max-width:599px){
-   
     header, section, footer{
         width: 90%;
     }
-
-    header{
-        height: 560px;
-    }
     section{
-        height: 8580px;
+        height: 9000px;
     }
-    
-    /* HEADER*/
-   
+    /****** HEADER***********/
     #marca{
         width: 100%;
     }
     #marca img{
-        width: 100%;
-        margin-left: 0%;
+        width: 80%;
+        margin-left: 10%;
     }
-  
-    #botonera_principal{
-        width: 100%;
-        height: 320px;
+    #botonera {
+        width: 50%;
     }
-
-     
-    #botonera_principal ul li{
-        display:block;
-    }
-    
-    #botonera_principal ul li a{
-        width: 100%;
-    }
-
     h2{
         font-size: 23px;
-    }
-        
+    } 
     #botonera_principal ul li a{
         width: 100%;
         font-size: 23px;
     }
-      
-    
-    /*NOSOTROS Y NUESTRA HISTORIA*/
-    
+    #mensaje {
+        width: 50%;
+        height: 200px;
+        float: right;
+    }
+    /**********NOSOTROS Y NUESTRA HISTORIA*********/
     #nosotros_historia{
         width: 100%;
         height: 70px;
@@ -836,12 +767,10 @@ button a{
         clear: both;
         margin-right: 1px;
     }
-    
     #fila1_izq img{ 
        width: 95%;
        margin-top: 5px;
     }
-    
     #fila1_centro{
         width: 100%;
         height: 550px;
@@ -854,33 +783,25 @@ button a{
         height: 250px;
         margin: 10px;
     }
-
-    
     #linea_de_tiempo{
         width: 100%;
         height: 280px;
         margin-left: 5px;
         clear: both;
     }    
-    
     #linea_de_tiempo img{
         width: 100%;
     }
-    
-    /* NUESTROS ESTILOS*/
-    
+    /********** NUESTROS ESTILOS*************/
     #estilos{
         width: 100%;
         height: 80px;
         background-color: #8a4514;
     }
-
     #tabla_de_productos{
         width: 100%;
         height: 5400px;
-
     }
-    
     .marco{
         width: 98%;
         height: 650px;
@@ -897,12 +818,10 @@ button a{
         -moz-border-radius: 40px;
         -webkit-border-radius: 40px;
     }
-    
     h4{
         font-size: 16px;
         text-align: center;
     }
-    
     #foto_session_ipa{
         width: 98%;
         clear: both;
@@ -960,16 +879,13 @@ button a{
         font-size: 18px;
         text-align: justify;
     }
-    
-    /* NUESTROS PRODUCTOS*/
-    
+    /*********** NUESTROS PRODUCTOS**********/
     #producto{
         width: 98%;
         height: 100px;
         clear: both;
         background-color: #8a4514;     
     }
-   
     .fila1{
         width: 33%;
         height: 45px;
@@ -981,43 +897,51 @@ button a{
         letter-spacing: 1px;
         font-size: 20px;
     }
-  
-    
     #fila2_barril_foto{
-        width: 32%;
-        height: 180px;
+        width: 30%;
+        height: 160px;
         margin-top:5px;
         margin-left: 0px;
         margin-right: 0px;
     }
     #fila2_botellas_video{
-        width: 32%;
-        height: 180px;
+        width: 30%;
+        height: 130px;
         margin-left: 0px;
         margin-right: 0px;
         box-sizing: border-box;
     }
     #fila2_botellas_video video{
-        height: 100%;
-        margin-left: 5%;
+        height: 90%;
+        margin-left: 10%;
         margin-right: 5%;
-        }
-       
+    }
+    #botonera_video ul {
+        margin:0;
+      }
+    #botonera_video ul li {
+      width: 10%;
+    }
+    #botonera_video ul li a {
+    padding: 2px;
+    }
+    #botonera_video ul li a img{
+        width: 80%;
+    }
     #fila2_choperas_foto{
-        width: 32%;
-        height: 180px;
+        width: 30%;
+        height: 160px;
         margin-left: 0px;
         margin-right: 0px;
     }
     #fila3_barril, #fila3_botellas, #fila3_choperas{
-        width: 30%;
+        width: 28%;
         height: auto;
         font-size: 15px;
         text-align: center;
         margin: 5px;
         box-sizing: border-box;
     }
-       
     .fila4{
         width: 30%;
         height: 90px;
@@ -1029,53 +953,39 @@ button a{
         font-size: 10px;
         text-align: center;
     }
-   
-    
-    /*CONTACTOS*/
-    
+    /**********CONTACTOS**************/
     #contactos{
         width: 98%;
         height: 80px;
         background-color:#8a4514;
     }
-   
     #botonera_de_frases{
         width: 98%;
         height: 480px;
     }
-    
     #botonera_de_frases ul{
         width: 98%;
         height: 480px;
     }
-    
     #botonera_de_frases ul li{
         width: 45%;
     }
-    
     #botonera_de_frases ul li a {
         width: 45%;
     }
-      
-    
-    
-    /*FOOTER*/
-    
-   
     #cupon{ 
         width: 100%;
-        margin-left: 0%;
+        margin-left: 10%;
     }
-    button{
-        margin-left: 0px;   
+    .submit-button2{
+        margin-left: 0px;  
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-left: 0px;
     }
-       
-    #derechos{
-        width: 100%;
+    #extra{
         height: 150px;
     }
-   
-
 }
 
 }
