@@ -8,39 +8,32 @@
 </head>
 <body>
     <header>
-        <div id="marca"> <img src="../img/logo_horizontal.png" alt="logo de Brugge cerveza artesanal"> </div>
+        <div id="marca"> <img src="./img/logo_horizontal.png" alt="logo de Brugge cerveza artesanal"> </div>
     </header>
-
     <section>
-     
         <div id="titulo">  
             <h1>Completá los datos para obtener tu descuento</h1>
             <p> Gracias por tomarte el tiempo en completarlo</p>
         </div>
-
-        <form id="formulario" method="POST" action="#">
-
+        <!-------Formulario---------->
+        <form id="formulario" method="POST" action="https://formspree.io/f/mvovngeo">
             <div class="formulario_grupo">
                 <label id="nombre-label" form="nombre"> <p>Nombre y Apellido: </p>  </label>
-                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Completá con tu nombre y apellido" required/> 
+                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Completá con tu nombre y apellido" maxlength="60"> 
             </div>
-
             <div class="formulario_grupo">
                 <label id="correo-label" form="correo"> <p> Correo electrónico:</p> </label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Completá con tu correo electrónico" required/>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Completá con tu correo electrónico" maxlength="60">
             </div>
-
             <div class="formulario_grupo">
                 <label> <p> Teléfono:</p> </label> 
-                <input type="tel" name="telefono" id="email" class="form-control" placeholder="Completá con tu teléfono, incluí el código de área" required/> 
+                <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Completá con tu teléfono, incluí el código de área"/> 
             </div>
-            
             <menu class="formulario_grupo">
                 <p> Querés recibir nuestras promociones? </p>
                 <label> <input name="Si-No"  value="Si" type="radio" class="input-radio"/> Si </label>
                 <label> <input name="Si-No" value="Si" type="radio" class="input-radio"/> No </label>
             </menu>
-            
             <menu class="formulario_grupo">
                 <p> Qué estilo preferís? <br/> (Podés elegir más de uno) </p>
                 <label> <input name="prefer" value="session ipa" type="checkbox" class="input-checkbox"/> SESSION IPA </label>
@@ -53,31 +46,41 @@
                 <label> <input name="prefer" value="old ale" type="checkbox" class="input-checkbox"/> OLD ALE </label>
             </menu> 
                        
-       
             <div id="comentario">  </div>
                 <div class="formulario-group">
                 <p> Algún comentario o sugerencia?</p>
-                <textarea id="comments" class="input-textarea" name="comentario" placeholder="Ingresa tu comentario..."></textarea>
+                <textarea id="comments" class="input-textarea" name="comentario" placeholder="Ingresa tu comentario... (recordá que tenés un máximo de 300 caracteres)" maxlength="300"></textarea>
+            </div>
+            <div id="descuento">
+                <input type="submit" id="submit" class="submit-button">  
             </div>
         </form>
-
-        <div id="descuento">
-            <button type="submit" id="submit" class="submit-button">  Obtener mi descuento </button>
-        </div>
-         
+        <!---Mensaje------->
         <article id="mensaje">
-            <p> Estarás recibiendo tu cupón de descuento por Whastapp </p>
+            <p> Estarás recibiendo tu cupón de descuento por Whatsapp </p>
         </article>
-         
+        <!--Imagen SVG animada-->
+        <section id="cerveza-animada">
+            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="200px" viewBox="0 0 560 960" style="enable-background:new 0 0 560 960;" xml:space="preserve">
+                <path class="cerveza" d="M147,386.582c0,0,0.833,235.875,0.833,257.209S168.333,668,172.667,668s145.667,0,154.333,0s17-11,17-28s0-253,0-253L147,386.582z"/>
+                <path class="espuma" d="M344,387l-132-0.418V422c0,0-2,16.75-20.75,16.75S171,428.25,171,423.5c0-5.25,0-36.5,0-36.5s-12.25-0.334-24-0.418c-19.625-2.457-23-25.332-3.625-38.832c-7.5-30.25,64.063-94.25,107.896-16.418c15.333-15.5,39.781-19,49.115,14.168c3.666-24.834,10.437-43.25,42.974-43.25c28.668,0,41.457,27.082,41.457,41.422C384.814,375,356.732,387,346.215,387H344z"/>
+                <path class="handle" d="M348,597c0,0,27.75,0,53,0c14,0,20.5-16.5,20.5-25.5c0-4.25,0.355-99,0.355-113.75S407.75,437,399.25,437S348,437,348,437"/>
+                <path class="outline" d="M147,385.481c0,0,0.833,235.875,0.833,257.209s20.5,24.209,24.834,24.209s145.667,0,154.333,0s17-11,17-28s0-48,0-48v-4v-201l-132-0.418v35.418c0,0-2,16.75-20.75,16.75s-20.25-10.5-20.25-15.25c0-5.25,0-36.5,0-36.5S158.75,385.565,147,385.481c-19.625-2.457-23-25.332-3.625-38.832c-7.5-30.25,64.063-94.25,107.896-16.418c15.332-15.5,39.78-19,49.114,14.168c3.666-24.834,10.437-43.25,42.974-43.25c28.668,0,41.457,27.082,41.457,41.422c-0.002,31.328-28.084,43.328-38.602,43.328"/>
+                <line class="lineas" x1="196" y1="480" x2="196" y2="562"/>
+                <line class="lineas" x1="250" y1="480" x2="250" y2="562"/>
+                <line class="lineas" x1="304" y1="480" x2="304" y2="562"/>
+            </svg>
+        </section>
     </section>
-
-
+    <!------FOOTER-------->
     <footer>
-        <article id="derechos">
-            <p>Beber con moderación. Prohibida su venta a menores de 18 años</p>
-            <p> © Brugge. Todos los derechos reservados</p>
-        </article>
+        <div class="footer-inner" id="derechos-izquierda">
+            <p> Beber con moderación. Prohibida su venta a menores de 18 años </p>
+        </div>
+        <div class="footer-inner" id="derechos-derecha">
+            <p> © 2021 Brugge. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
+<script type="text/javascript" src="./js/validar_formulario.js"></script>
 </body>
 </html>
