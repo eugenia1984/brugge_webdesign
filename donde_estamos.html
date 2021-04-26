@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="./css/donde_estamos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brugge cerveza artesanal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!---- HEADER ---->
+    <header>
+        <div id="marca"> <img src="./img/logo_horizontal.png" alt="logo de Brugge cerveza artesanal"> </div>
+    </header>
+<!----SECTION DONDE ESTAMOS---->
+    <section id="titulo">
+        <h1>Dónde estamos?</h1>
+    </section>
+    <!---Aca aplico el objeto creado con canva, en este caso esh un texto-->
+    <article id="visitanos">
+        <canvas id="lienzo1" width="300" height="150">Su navegador no soporta el elemento canvas</canvas>
+    </article>
+    <article id="general">
+        <ul>
+            <li> <h2> Nuestra fábrica </h2>
+                <h3> Brugge Cerveza Artesanal</h3>
+                <p> Hipólito Yrigoyen 2731, Martinez </p>
+                <p> Teléfono: 15 6589-6401 </p>
+                <p> <a href="https://api.whatsapp.com/send/?phone=5491165896401&text&app_absent=0" target="_blank"> Contactanos por Whatsapp </a> </p>
+            </li>
+            <li> <h2> Palermo</h2>
+                <h3> Cervecería Valk Taproom</h3>
+                <p> Jorge Luis Borges 1654 </p>
+                <p> Teléfono: 011 4831-2777 </p>
+                <p> <a href="https://m.facebook.com/valktaproom.com.ar/" target="_blank"> Contactalos por Facebook </a> </p>
+                <h3> Burger Forever </h3>
+                <p> José A. Cabrera 5187</p>
+                <p> Teléfono: 011 15-3268-3309 </p>
+                <p> <a href="https://api.whatsapp.com/send?phone=5491132683309&text=Hola%2C%20decinos%20cu%C3%A1l%20es%20tu%20pedido%3F" target="_blank"> Mandales un Whatsapp</a></p>
+            </li>
+            <li>
+                <h2>San Isidro</h2>
+                <h3> Buffalos Hamburguesería </h3>
+                <p> Av. del Libertador 13946, Martinez</p>
+                <p>Teléfono: 011 4793-0981 </p>
+                <p> <a href="https://www.pedidosya.com.ar/restaurantes/san-isidro/buffalos-hamburgueseria-martinez-menu?utm_campaign=google_reserve_place_order_action&utm_medium=organic&utm_source=google" target="_blank">  Hacé tu pedido</a></p>
+            </li>
+            <li>
+                <h2>José C. Paz</h2>
+                <h3> El Cultural Patio Cervecero</h3>
+                <p>Zuviría 4543</p>
+                <p> Teléfono:  011 3503-9465</p>
+                <p> <a href="https://www.instagram.com/elculturalpatiocervecero/?igshid=2hey3tpskak2" target="_blank"> Seguilos en Instagram</a></p>
+            </li>
+        </ul>
+    </article>
+    <!----WEB STORAGE---->
+    <article id="webStorage">
+        <div class="inspiracion__section-div inspiracion__section-div-notas">
+            <h2>¡Agendá tu salida!</h2>
+        </div>
+
+        <div id="notasCliente" class="notasCliente">
+            <p>Queremos que nos conozcas, por eso te compartimos todos los lugares donde podés encontrarnos!</p>
+            <p>Te invitamos a que escribas tus próximas visitas!</p>
+            <p>Esta información no se envará a nosotros, quedará almacenada en tu computadora o celular para que puedas ir modificándola.</p>
+
+            <form class="tarea-cliente-formulario" method="POST" action="https://formspree.io/f/mvovngeo">
+                <label class="tarea-cliente-label" for="id">Lugar a visitar :</label>
+                <input class="tarea-cliente-input ancho-personalizado" type="text" id="tarea-cliente-id" name="id" min="1" max="100" placeholder=" Ingresa el nombre del lugar a visitar">
+                <label class="tarea-cliente-label" for="desc">Podés agregar las cervezas que pediras acá :</label>
+                
+                <textarea class="tarea-cliente-textarea ancho-personalizado" id="tarea-cliente-desc" name="desc" placeholder=" Para no olvidar el pedido, ya podés ir eligiendo entre nuestros 8 estilos"></textarea>
+
+                <label class="tarea-cliente-label" for="urg">Seleccioná el nivel de urgencia de la visita :</label>
+                
+                <select class="tarea-cliente-select" name="urg" id="tarea-cliente-urg">
+                    <option value="">Seleccionar el nivel de urgencia</option>
+                    <option value=" Muy urgente">Muy urgente</option>
+                    <option value=" Urgente">Urgente</option>
+                    <option value=" Poco urgente">Poco urgente</option>
+                </select>
+
+                <label class="tarea-cliente-label" for="fecha">Fecha de la visita al local :</label>
+                <input class="tarea-cliente-input" type="date" name="fecha" id="tarea-cliente-fecha">
+
+                <input class="tarea-cliente-boton" type="button" id="tarea-cliente-guardar" value="Guardar"onclick="nuevaTarea()">
+            </form>
+            <div id="tareas-pendientes" class="tareas-pendientes"></div>
+        </div>
+    </article>
+<!------FOOTER-------->
+    <footer>
+        <div class="footer-inner" id="derechos-izquierda">
+            <p> Beber con moderación. Prohibida su venta a menores de 18 años </p>
+        </div>
+        <div class="footer-inner" id="derechos-derecha">
+            <p> © 2021 Brugge. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/texto.js"></script>
+    <script type="text/javascript" src="./js/webstorage.js"></script>
+</body>
+</html>
