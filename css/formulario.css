@@ -2,7 +2,6 @@ body {
     margin: 0px;
     color: #faf8f8f5;
   }
-
 header, section, footer{
     width: 960px;
     margin-left: auto;
@@ -14,9 +13,7 @@ p{
 #titulo p{
     color: #f4ac52;
 }
-
-/* HEADER */
-
+/******** HEADER *************/
 header{
     height: 250px;
     background-color: #F4AC52;
@@ -27,26 +24,21 @@ header{
     background-color: #F4AC52;
     clear: both;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto; 
 }
-
 #marca img{
     height: 100%;
     margin-left: 20%;
 }
 
-/*SECTION*/
-
+/*****SECTION***********/
 section{
     font-size: 20px;
     font-weight: bold;
     color: #F3E2D2;
     height: 1700px;
 }
-
-/*titulo*/
-
+/***titulo**********/
 #titulo{
     width: 100%;
     height: 130px;
@@ -57,9 +49,7 @@ section{
     padding-top: 5px;
     box-sizing: border-box;
 }
-
-/*formulario*/
-
+/*********formulario*************/
 #formulario{
     width: 700px;
     height: 1300px;
@@ -70,10 +60,13 @@ section{
     margin-bottom: 50px;
     padding-top: 10px;
     box-sizing: border-box;
-    border-radius: 25px; 
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;   
     box-shadow: -10px 15px 15px 15px #a5a2a2;
+    -moz-box-shadow: -10px 15px 15px 15px #a5a2a2;
+    -webkit-box-shadow: -10px 15px 15px 15px #a5a2a2;
 }
-
 label {
     display: inline-block;
     width: 100%;
@@ -81,19 +74,15 @@ label {
     margin-top: 10px; 
     text-align: center;
 }
-
-
 input, button, select, textarea {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
-
 button {
     border: none;
 }
-
 .formulario_grupo{
     text-align: center;
     color: #3D1C04;
@@ -109,33 +98,28 @@ button {
     background-clip: padding-box;
     border: 2px solid #ced4da;
     border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem; 
     text-align: center;
 }
-
-
 .form-control:focus {
     border-color: #ffe180;
     outline: 0;
     border: 10px bold;
     box-shadow: -2px 2px 2px 2px rgba(0, 123, 255, 0.15);
-  }
-
+    -moz-box-shadow: -2px 2px 2px 2px rgba(0, 123, 255, 0.15);
+    -webkit-box-shadow: -2px 2px 2px 2px rgba(0, 123, 255, 0.15);
+}
 .input-radio {
   margin-right: 10px;
 }
-
-
 .input-textarea {
     min-height: 120px;
     width: 80%;
     margin-left: 10%;
     resize: vertical;
-  }
-
-
-
-/*COMENTARIO Y/O SUGERENCIA*/
-
+}
+/**********COMENTARIO Y/O SUGERENCIA*************/
 #comentario p{
     text-align: center;
 }
@@ -148,20 +132,22 @@ button {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bolder;
-  }
+}
 
- 
 #descuento{
     width: 50%;
     border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
     box-shadow: -5px 5px 5px #4d4b4b;
+    -moz-box-shadow: -5px 5px 5px #4d4b4b;
+    -webkit-box-shadow: -5px 5px 5px #4d4b4b;
     margin-left: 26%;
     clear: both;
 }
-
 #mensaje{
     width: 70%;
-    height: 70px;
+    height: 140px;
     line-height: 70px;
     clear: both;
     margin-top:10px;
@@ -171,38 +157,206 @@ button {
     text-align: center;
 }
 
-/*FOOTER*/
+/*********IMAGEN SVG ANIMADA*************/
+#cerveza-animada {
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    top: 350px;
+    right: 15px;
+    z-index: 100;
+}
 
-footer{
-    height: 70px;
+.lineas {
+    fill: none;
+    stroke: #4d4d4d;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.espuma {
+    fill: #F15A24;
+}
+.outline {
+    fill: none;
+    stroke: #4d4d4d;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+.cerveza {
+    fill: #d9ff00;
+}
+.handle {
+    fill: none;
+    stroke: #4d4d4d;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+ }
+  
+  /*********** Animation ********/
+
+.outline {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: outlinedash 6s linear infinite;
+}
+  
+@keyframes outlinedash {
+    5% {
+      stroke-dashoffset: 1500;
+    }
+    45% {
+      stroke-dashoffset: 0;
+    }
+    55% {
+      stroke-dashoffset: 0;
+    }
+    95% {
+      stroke-dashoffset: 1500;
+    }
+}
+  
+
+.handle {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: handledash 6s linear infinite;
+}
+  
+@keyframes handledash {
+    10% {
+      stroke-dashoffset: 300;
+    }
+    20% {
+      stroke-dashoffset: 300;
+    }
+    23% {
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    77% {
+      stroke-dashoffset: 0;
+    }
+    80% {
+      stroke-dashoffset: 300;
+    }
+    90% {
+      stroke-dashoffset: 300;
+    }
+}
+  
+
+.lineas {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: linedash 6s linear infinite;
+}
+  
+@keyframes linedash {
+    5% {
+      stroke-dashoffset: 100;
+    }
+    10% {
+      stroke-dashoffset: 0;
+    }
+    90% {
+      stroke-dashoffset: 0;
+    }
+    95% {
+      stroke-dashoffset: 100;
+    }
+}
+  
+
+.espuma {
+    fill: #202020;
+    animation: espumarellena 6s linear infinite;
+    -webkit-animation: espumarellena 6s linear infinite;
+}
+  
+@keyframes espumarellena {
+    40% {
+      fill: #202020;
+    }
+    45% {
+      fill: #FFFFFF;
+    }
+    55% {
+      fill: #FFFFFF;
+    }
+    60% {
+      fill: #202020;
+    }
+}
+  
+
+.cerveza {
+    fill: #131313;
+    animation: cervezallena 6s linear infinite;
+    -webkit-animation: cervezallena 6s linear infinite;
+}
+@keyframes cervezallena {
+    35% {
+      fill: #131313;
+    }
+    40% {
+      fill: #DEB712;
+    }
+    65% {
+      fill: #DEB712;
+    }
+    65% {
+      fill: #131313;
+    }
+}
+
+/******FOOTER*********/
+footer {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
     background-color: #3D1C04;
+    box-sizing: border-box;
+    padding: 1rem;
+    color: #F4AC52;
+}
+.footer-inner{
+    width: 30%;
+    display:flex;
+    align-items: center;
+    padding: 1rem;
+}     
+#derechos-izquierda p {
+    color: #F4AC52;
+}
+#derechos-derecha {
+    display:flex;
+    justify-content: flex-end;  
+}
+#derechos-derecha p {
+    color: #F4AC52;
 }
 
-#derechos{
-    width: 960px;
-    height: 70px;
-    color: #f4ac52;
-    float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-    text-align: center;
-}
-#derechos p{
-    color: #f4ac52;
-}
 
-/*media 600 a 1023*/
 
+
+/**********media 600 a 1023************/
 @media screen and (min-width:600px) and (max-width:1280px){
     header, section, footer{
         width: 580px;
     }
-
     header{
         height: 200px;
     }
-    /* HEADER*/
-    
+    /******** HEADER************/
     #marca{
         width: 580px;
     }
@@ -210,63 +364,40 @@ footer{
         height: 80%;
         margin-left: 8%;
     }
-
-    /*SECTION*/
-
-    /*titulo*/
+    /*******titulo********/
     #titulo{
         height: 200px;
     }
-    
-
-    /*formulario*/
-
-#formulario{
-    width: 550px;
-    height: 1300px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 2px;
-    border-radius: 25px; 
-    box-shadow: -5px 5px 5px 3px #a5a2a2;
-}
-
-label {
-    width: 80%;
-    margin-bottom: 8px;
-    margin-top: 8px; 
-}
-
-.form-control {
-    width: 500px;
-    margin-left: 15px;
-}
-    /*FOOTER*/
-
-    footer{
-        height: 150px;
+    /*********formulario*********/
+    #formulario{
+        width: 550px;
+        height: 1300px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 2px;
+        border-radius: 25px; 
+        box-shadow: -5px 5px 5px 3px #a5a2a2;
     }
-          
-    #derechos{
-        width: 580px;
-        height: 150px;
+    label {
+        width: 80%;
+        margin-bottom: 8px;
+        margin-top: 8px; 
     }
-    #derechos p{
-       font-size: 20px;
-    }
-   
+    .form-control {
+        width: 500px;
+        margin-left: 15px;
+    }  
 }
 
-/*media max 599*/
+/************media max 599******************/
 
 @media screen and (min-width:320px) and (max-width:599px){
-   
     header, section, footer{
         width: 90%;
     }
-    /*header*/
+    /*******header************/
     header{
         height: 250px;
     }
@@ -276,32 +407,28 @@ label {
         height: 50%;
         margin-left: auto;
     }
-    /*section*/
+    /**********section************/
     section{
-        height: 1900px;
+        height: 1850px;
     }
-    
-    /*titulo*/
-
+    /***********titulo********/
     #titulo{
-        height: 250px;
-        padding-left:15px;
-        padding-right: 15px;
+        height: 200px;
+        padding: 0px 15px;
     }
-    /*formulario*/
-    
+    /*********formulario*************/
     #formulario{
         width: 90%;
-        height: 1280px;
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        height: 1320px;
+        margin:20px 10px 20px 10px;
         padding-top: 2px;
         border-radius: 25px; 
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
         box-shadow: -5px 5px 5px 3px #a5a2a2;
+        -moz-box-shadow: -5px 5px 5px 3px #a5a2a2;
+        -webkit-box-shadow: -5px 5px 5px 3px #a5a2a2;
     }
-    
     label {
         display: inline-block;
         width: 90%;
@@ -309,36 +436,19 @@ label {
     input, button, select, textarea {
         margin-left: 0 0 0 25px;
     }
-    
     .form-control {
         width: 80%;
         margin-left: 5%;
         font-size: 15px;
-
     }
-    
-    
-    /*comentario y/o sujerencia*/
+    /**********comentario y/o sugerencia************/
     #mensaje{
-        width: 70%;
-        height: 310px;
+        width: 80%;
+        height: 200px;
+        margin: 0 auto;
+    } 
+    /****La cerveza animada fija***/
+    #cerveza-animada {
+        top: 420px;
     }
-    
-    /*FOOTER*/
-    
-    footer{
-        height: 150px;
-    }
-    
-    #derechos{
-        width: 100%;
-        height: 150px;
-    }
-    #derechos p{
-        font-size: 18px;
-        margin: 20px 5px 0 5px;
-    }
-    
- 
-
 }
