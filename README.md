@@ -2,7 +2,10 @@ ENGLISH
 
 # brugge_webdesign
 
+---
+
 ## What I did 🚀
+
 This is my first project as a WebDesigner. <br/>
 I will create the web page to htts://brugge.com.ar <br/>
 Everyone can also follow them at @bruggecerveza, they are really nice people, very hard work,and create a delicious artesanal beer <br/>
@@ -12,15 +15,26 @@ In the contact us section Y make linkes to: Instagram, Whatsapp, Email, and anot
 And at the end I added a button to get a discount cupon, so a form will be deiplay. <br/>
 It ia a proyect still in progress, so anyone can make suggestions, that will be great!.
 
+---
+
 ## Content 🚀
+
 _This Project only has one master branch, it was a small project so it did not need more branches._
 
+---
+
 ## Builded with 🛠️
+
 _**HTML 5** and **CSS3**_
 
+---
+
 ## Demo 📦
+
 _If you want to see how this project was, you can do it from:_
 :arrow_right: *https://eugenia1984.github.io/brugge_webdesign/.** <br/>
+
+---
 
 ## Please: 🎁
 
@@ -29,34 +43,58 @@ _If you want to see how this project was, you can do it from:_
 * Thanks a lot 🤓.
 
 ---
+
 ## Notes
+
 I appreciate your interest in this Project <br/>
-⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn]( http://www.linkedin.com/in/maríaeugeniacosta) 
+⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
+
 ---
 
 ESPAÑOL
 
 # brugge_webdesign
 
+---
+
 ## Lo que hice 🚀
-Este es mi primer proyecto como diseñador web. <br/>
-Crearé la página web para htts: //brugge.com.ar <br/>
-Todos también pueden seguirlos en @bruggecerveza, son personas realmente agradables, muy trabajadores y crean una deliciosa cerveza artesanal <br/>
-Es una Página Web de Producto con diseño responsive, con cuatro secciones: Nosotros y nuestra historia, Nuestros estilos, Nuestros Productos y Contáctenos. <br/>
-En los productos agregué un video y diferentes call to action, para que la gente pueda ordenar por whatsapp. <br/>
-En la sección contáctanos y realizas enlaces a: Instagram, Whatsapp, Email, y otra página web (donde puedes ver dónde puedes comprar las cervezas). <br / <
-Y al final agregué un botón para obtener un cupón de descuento, por lo que se retrasará un formulario. <br/>
+
+Este es mi primer proyecto como diseñador web. 
+
+Crearé la página web para htts: //brugge.com.ar 
+
+Todos también pueden seguirlos en @bruggecerveza, son personas realmente agradables, muy trabajadores y crean una deliciosa cerveza artesanal 
+
+Es una Página Web de Producto con diseño responsive, con cuatro secciones: Nosotros y nuestra historia, Nuestros estilos, Nuestros Productos y Contáctenos. 
+
+En los productos agregué un video y diferentes call to action, para que la gente pueda ordenar por whatsapp. 
+
+En la sección contáctanos y realizas enlaces a: Instagram, Whatsapp, Email, y otra página web (donde puedes ver dónde puedes comprar las cervezas). 
+
+Y al final agregué un botón para obtener un cupón de descuento, por lo que se retrasará un formulario. 
+
 Es un proyecto aún en progreso, así que cualquiera puede hacer sugerencias, ¡será genial !.
 
+---
+
 ## Contenido 🚀
+
 _Este proyecto solo tiene una sucursal maestra, era un proyecto pequeño por lo que no necesitaba más sucursales_
 
+---
+
 ## Construido con 🛠️
+
 _ ** HTML 5 ** y ** CSS3 ** _
 
+---
+
 ## Demo 📦
+
 _Si quieres ver cómo fue este proyecto, puedes hacerlo desde: _
 : arrow_right: * https: //eugenia1984.github.io/brugge_webdesign/.** <br/>
+
+---
 
 ## Por favor: 🎁
 
@@ -65,6 +103,7 @@ _Si quieres ver cómo fue este proyecto, puedes hacerlo desde: _
 * Muchas gracias 🤓.
 
 ---
+
 ## Notas
-Agradezco su interés en este proyecto <br/>
-⌨️ con ❤️ de [María Eugenia Costa] (https://github.com/eugenia1984) 😊 y sígueme en [LinkedIn] (http://www.linkedin.com/in/maríaeugeniacosta)
+
+Agradezco su interés en este proyecto ⌨️ con ❤️ de [María Eugenia Costa] (https://github.com/eugenia1984) 😊 y sígueme en [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
